@@ -30,9 +30,9 @@ To get started with this project, follow these steps:
    git clone https://github.com/yahaiii/pld_huddlr.git
    ```
 2.  Navigate to the project directory:
-    ```
-   cd pld_huddlr
-   ```
+```
+cd pld_huddlr
+```
 
 3.  Create and activate a virtual environment (optional but recommended):
     ```
@@ -41,14 +41,14 @@ To get started with this project, follow these steps:
     ```
 
 4.  Install the dependencies:
-  ```
+    ```
     pip install -r requirements.txt
-  ```
-  
+    ```
+
 3.  Run the application:
-```
-  flask run
-```
+    ```
+    flask run
+    ```
 This will open the application in your browser at http://localhost:5000/.
 
 
