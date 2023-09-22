@@ -7,12 +7,10 @@ PLD Huddlr is a web application designed to simplify peer collaboration and sche
 - User authentication using OAuth for ALX program participants.
 - User profile setup and management.
 - Availability input and tracking.
-- Advanced matching algorithm considering availability and concepts of interest.
 - Meeting scheduling functionality.
-- Data storage and management using MySQL.
-- Responsive and user-friendly interface styled with pure CSS3.
-- Backend powered by Flask for request handling.
-- Integration with PLD meeting rooms(ALX intranet communication tool).
+- Matching algorithm considering availability and concepts of interest.
+- Meeting notification & reminder functionality
+- Integration with PLD meeting rooms (ALX intranet communication tool).
 
 ## Technologies Used
 
@@ -31,12 +29,22 @@ To get started with this project, follow these steps:
   ```
    git clone https://github.com/yahaiii/pld_huddlr.git
    ```
-2.  Install the dependencies:
+2.  Navigate to the project directory:
+    ```
+   cd pld_huddlr
+   ```
+
+3.  Create and activate a virtual environment (optional but recommended):
+    ```
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+    ```
+
+4.  Install the dependencies:
   ```
-  cd pld_huddlr
-  # Install Python dependencies
     pip install -r requirements.txt
   ```
+  
 3.  Run the application:
 ```
   flask run
