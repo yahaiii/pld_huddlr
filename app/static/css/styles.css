@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    padding: 30px;
+    margin: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #db3e3e; /* Theme color for important components */
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 10em; /* Adjust the width to your desired size */
+    height: auto; /* Automatically adjust the height while maintaining aspect ratio */
+    display: block; /* Ensure the image is centered horizontally */
+    margin: 0 auto; /* Center the image horizontally within its container */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #db3e3e; /* Theme color for important components */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #ad2323; /* Slightly darker shade for hover effect */
+}
