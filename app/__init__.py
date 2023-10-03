@@ -7,10 +7,12 @@ from flask_migrate import Migrate
 app = Flask(__name__)
 
 # TODO
-# remember to take out hardcoded config
+# 1. remember to take out hardcoded config
+# 2. Replace SECRET_KEY with something random and strong app.config['SECRET_KEY'] = os.urandom(24) 
 
 # Load app configurations from config file
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sql8649936:Fp3Ba9DYYl@sql8.freemysqlhosting.net:3306/sql8649936'
+app.config['SECRET_KEY'] = 'ALXWakanda20_Love'
 
 # Initialize SQLAlchemy
 db = SQLAlchemy(app)
@@ -27,10 +29,10 @@ from .models.topic_model import Topic
 
 
 # Import routes 
-# from app.routes import user_routes
+from app.routes.user_routes import user_routes
 
 # Register the blueprint
-# app.register_blueprint(user_routes)
+app.register_blueprint(user_routes)
 
 # Import other necessary modules or setup here
 

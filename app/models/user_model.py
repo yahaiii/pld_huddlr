@@ -11,7 +11,7 @@ class User(db.Model):
     UserID = db.Column(db.Integer, primary_key=True, autoincrement=True)
     Username = db.Column(db.String(255), unique=True, nullable=False)
     PasswordHash = db.Column(db.String(255), nullable=False)
-    Email = db.Column(db.String(255), unique=True, nullable=False)
+    Email = db.Column(db.String(250), unique=True, nullable=False)
     FirstName = db.Column(db.String(255))
     LastName = db.Column(db.String(255))
     ProfileImageURL = db.Column(db.String(255))

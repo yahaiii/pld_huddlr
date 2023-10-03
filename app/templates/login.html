@@ -3,40 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
 </head>
 <body>
     <div class="container">
         <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
-        <form id="registration-form" method="POST" action="/register">
-            {{ form.hidden_tag() }} 
+        <form id="login-form" method="POST" action="/login">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <div id="email-error" class="error"></div>
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
                 <div id="password-error" class="error"></div>
             </div>
-            <div class="form-group">
-                <label for="confirm_password">Confirm Password</label>
-                <input type="password" id="confirm_password" name="confirm_password" required>
-            </div>
 
             <div class="form-group">
-                <button type="submit">Sign Up</button>
+                <button type="submit">Login</button>
             </div>
-            <p class="">Already have an account?  <a class="" href="{{url_for('user_routes.login')}}"> Login here</a></p>
         </form>
+        <div class="forgot-password">
+            <p class="">Don't have an account?  <a class="" href="{{url_for('user_routes.register')}}"> Sign Up here</a></p>
+            <a href="/forgot-password">Forgot Password?</a>
+        </div>
     </div>
 
-    <script src="{{ url_for('static', filename='scripts/register.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/login.js') }}"></script>
 </body>
 </html>
