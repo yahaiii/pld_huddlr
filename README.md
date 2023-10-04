@@ -1,6 +1,6 @@
 # PLD Huddlr
 
-PLD Huddlr is a web application designed to simplify peer collaboration and scheduling for learners in the ALX Intro to Software Engineering program. It allows learners to efficiently coordinate meeting arrangements based on their availability and shared concepts of interest, fostering effective knowledge exchange.
+PLD Huddlr is a web application designed to simplify peer collaboration and scheduling for learners in the ALX Intro to Software Engineering program. It allows learners to efficiently coordinate meeting arrangements based on their availability and shared concepts of interest, fostering effective knowledge exchanges.
 
 ## Features
 
