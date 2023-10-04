@@ -8,6 +8,7 @@ __pycache__/
 
 # Virtual environment
 venv/
+wvenv/
 .env/
 
 # IDE files (for example, if you're using VSCode)

@@ -17,6 +17,12 @@ class User(db.Model):
     ProfileImageURL = db.Column(db.String(255))
     RegistrationDate = db.Column(db.DateTime, default=datetime.datetime.utcnow)
 
+    # Relationships
+    notifications = db.relationship('Notification', back_populates='user')
+    meetings_invited_to = db.relationship('MeetingInvitees', back_populates='user')
+    availability = db.relationship('Availability', back_populates='user')
+
+
     def __init__(self, username, email, password, first_name=None, last_name=None, profile_image_url=None):
         """
         Initialize a new user.

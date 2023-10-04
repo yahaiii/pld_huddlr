@@ -11,7 +11,10 @@ app = Flask(__name__)
 # 2. Replace SECRET_KEY with something random and strong app.config['SECRET_KEY'] = os.urandom(24) 
 
 # Load app configurations from config file
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sql8649936:Fp3Ba9DYYl@sql8.freemysqlhosting.net:3306/sql8649936'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sql8649936:Fp3Ba9DYYl@sql8.freemysqlhosting.net:3306/sql8649936'
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password@localhost/PLDHddlr'
+
 app.config['SECRET_KEY'] = 'ALXWakanda20_Love'
 
 # Initialize SQLAlchemy
